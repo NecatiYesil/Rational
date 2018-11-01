@@ -1,21 +1,28 @@
-#ifndef RATIONAL_H
-#define RATIONAL_H
+#include <iostream>
 #include <string>
-
 class Rational{
 private:
     int numerator, denominator;
 public:
+    Rational();
     void set(int _numerator, int _denominator);
     Rational add(Rational R2); 
+    std::string print();
 };
 
-
+Rational::Rational()
+{
+    numerator = 1;
+    denominator = 1;
+}
 
 void Rational::set(int _numerator, int _denominator)
 {
+    if(_denominator != 0)
+    {
     numerator = _numerator;
     denominator = _denominator;
+    }
 }
 
 Rational Rational::add(Rational R2)
@@ -28,15 +35,8 @@ Rational Rational::add(Rational R2)
     return new_rational;
 }
 
-
-int main()
+std::string Rational::print()
 {
-    Rational Rational1;
-    Rational1.set(3, 5);
-    Rational Rational2;
-    Rational2.set(2,6);
-    Rational Rational3 = Rational1.add(Rational2);
-
+   return numerator + "/" + denominator;
 }
 
-#endif
