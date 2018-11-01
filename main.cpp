@@ -5,8 +5,19 @@ using namespace std;
 
 int main()
 {
+    int a1,b1,a2,b2;
+    cout << "Enter integer numerator of the first ratio: ";
+    cin >> a1;
+    cout << "Enter integer denominator of the first ratio: ";
+    cin >> b1;
+    cout << "Enter integer numerator of the second ratio: ";
+    cin >> a2;
+    cout << " Enter integer denominator of the second ratio: ";
+    cin >> b2;
     Rational Rational1;
-    Rational Rational(2,5);
-
- return 0;
+    Rational1.set(a1, b1);
+    Rational Rational2;
+    Rational2.set(a2,b2);
+    Rational Rational3 = Rational1.add(Rational2);
+return 0;
 }
