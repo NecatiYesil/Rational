@@ -11,13 +11,13 @@ public:
     Rational add(Rational R2); 
     void print();
 };
-
+// Initilize the variables
 Rational::Rational()
 {
     numerator = 1;
     denominator = 1;
 }
-
+// It prevent to denominator to be zero
 void Rational::set(int _numerator, int _denominator)
 {
     if(_denominator != 0)
@@ -26,7 +26,7 @@ void Rational::set(int _numerator, int _denominator)
     denominator = _denominator;
     }
 }
-
+// Adds the ratios together 
 Rational Rational::add(Rational R2)
 {
     int N3, D3;
