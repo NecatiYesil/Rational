@@ -28,15 +28,4 @@ Rational Rational::add(Rational R2)
     return new_rational;
 }
 
-
-int main()
-{
-    Rational Rational1;
-    Rational1.set(3, 5);
-    Rational Rational2;
-    Rational2.set(2,6);
-    Rational Rational3 = Rational1.add(Rational2);
-
-}
-
 #endif
