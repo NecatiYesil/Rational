@@ -1,5 +1,6 @@
 #ifndef RATIONAL_H
 #define RATIONAL_H
+#include <iostream>
 #include <string>
 class Rational{
 private:
@@ -8,7 +9,7 @@ public:
     Rational();
     void set(int _numerator, int _denominator);
     Rational add(Rational R2); 
-    std::string print();
+    void print();
 };
 
 Rational::Rational()
@@ -36,9 +37,9 @@ Rational Rational::add(Rational R2)
     return new_rational;
 }
 
-std::string Rational::print()
+void Rational::print()
 {
-   return numerator + "/" + denominator;
+   std::cout <<  numerator << "/" << denominator;
 }
 
 #endif
