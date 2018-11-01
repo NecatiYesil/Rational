@@ -1,7 +1,12 @@
 #include <iostream>
+#include "rational.h"
+
 using namespace std;
+
 int main()
 {
-  cout << "Hello World" ;
+    Rational Rational1;
+    Rational Rational(2,5);
+
  return 0;
 }

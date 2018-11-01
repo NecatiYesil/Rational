@@ -1,5 +1,7 @@
-#include <iostream>
+#ifndef RATIONAL_H
+#define RATIONAL_H
 #include <string>
+
 class Rational{
 private:
     int numerator, denominator;
@@ -36,3 +38,5 @@ int main()
     Rational Rational3 = Rational1.add(Rational2);
 
 }
+
+#endif
