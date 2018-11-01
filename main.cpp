@@ -1,3 +1,12 @@
+/**
+    File: main.cpp & rational.h
+    Description: it takes 2 ratios adds them up and prints the result in ratio form(a/b)
+    Team members: NecatiYesil, DavidS, eberthg4181, alejanr2286
+    Designer/Architect: DavidS/NecatiYesil
+    Implementation: DavidS/Necatiyesil
+    Testing: eberthg4181/alejanr2286
+    DoC: 11/1/18
+**/
 #include <iostream>
 #include "rational.h"
 
